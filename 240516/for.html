@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // for (var i =2; i < 10; i++) {
+  //   for (var j = 1; j < 10; j++) {
+  //     document.write((`${i} X ${j} = ${i*j}<br>`))
+  //   }
+  // }
+
+  //1부터 100까지의 숫자 중에서 모든 짝수의 합을 계산하고 출력하는 프로그램을 작성하세요.
+  let hap = 0;
+  for(let n = 1; n < 101; n++) {
+    if (n%2==0){
+      hap = hap+n;
+    }
+  }
+  console.log(hap);
+  // //1부터 100까지의 짝수의 합
+  // let s = 0;
+  // for (var i = 0; i < 101; i+=2) {
+  //   document.write(i, '<br>');
+  //   s += i;
+  // }
+  // document.write(s, '<br>');\\
+
+  // 강사님 코드
+  let total = 0;
+  for(let i=1; i<=100; i++ ){
+    if(i % 2 === 0){
+      total += i;
+    }
+  }
+
+  console.log(total);
+
+
+  let j=1;
+  let totalWhile = 0;
+
+  while(j<=100){
+
+    if(j % 2 === 0){
+      totalWhile += j;
+    }
+    j++;
+  }
+
+  console.log(totalWhile);
+
+</script>
+
+</body>
+</html>
