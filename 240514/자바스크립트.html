@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 두 가지 수를 전달하면 두 수의
+    // 합을 반환하는 함수를 만들어 주세요.
+    // 이때 두 가지 수를 전달하지 못했을 경우
+    // “두 가지 수를 전달해야 합니다”
+    // 라는 메시지를 띄어야 합니다.
+
+    // function sum(x, y) {
+    //     if(x !== undefined && y !== undefined)
+    //         return x+y;
+    //     else console.log("“두 가지 수를 전달해야 합니다”")
+    // }
+    // sum(3);
+
+    // 두 수 a와 b를 입력받고,
+    // a와 b 중 더 큰 수를 출력하는 코드를 만들어보세요.
+    // 이때, a와 b가 같은 경우
+    // "같은 숫자입니다"라는 문장을 출력하세요.
+    //// let a = Number(num_a);
+    //// let b = Number(num_b);
+    let a = Number(prompt('a를 입력하세요'));
+    console.log(a);
+    let b = Number(prompt('b를 입력하세요'));
+    let bigger = (a>b) ? a : (a=b) ? '같은 숫자입니다' : b;
+    console.log(bigger);
+
+    // 사용자로부터 입력받은 성적에 따라 등급을
+    // 출력하는 프로그램을 작성하세요.
+    // 성적이 90점 이상이면 "A", 80점 이상이면
+    // "B", 70점 이상이면 "C", 60점 이상이면
+    // "D", 그 외에는 “강해져서 돌아와라”를 출력합니다.
+
+    let score = Number(prompt('성적을 입력하세요.'));
+    let grade;
+
+    if(score >= 90) {
+        grade = "A";
+    } else if(score >= 80) {
+        grade = "B";
+    } else if(score >= 70) {
+        grade = "C";
+    } else grade = "D";
+    console.log(grade);
+
+    let switch_score = parseInt(score / 10);
+    switch (switch_score) {
+        case 9:
+            grade = "A";
+            console.log(grade);
+            break;
+        case 8:
+            grade = "Bd";
+            console.log(grade);
+            break;
+        case 7:
+            grade = "C";
+            console.log(grade);
+            break;
+        default:
+            grade = "D";
+            console.log(grade);
+            break;
+    }
+
+</script>
+</body>
+</html>
+인자가 갯수가 매개변수보다 더 많이 들어왔을 때 판별하는 방법은 없을까요?
