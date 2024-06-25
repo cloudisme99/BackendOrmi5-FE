@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  function Me(){
+    //생성자 함수안의 this는 인스턴스를 가르킴
+    this.name = '윤';
+    this.address = '서울시';
+    this.phonenumber = '010-1111-2222';
+  }
+
+  //프로토타입 등록
+  Me.prototype.canWalk = function() {
+    console.log('재현이가 걷는다');
+  }
+  Me.prototype.teaching = function(student) {
+    student.levelUp();
+  };
+
+  function Ormi() {
+    this.level = 1;
+  }
+
+  Ormi.prototype.levelUp = function() {
+    this.level++;
+  }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const me = {
+    name : '허영윤',
+    address : '서울시',
+    studyDate : function(date){
+      calendar.dateUp();
+      console.log('공부한 날이 '+ calendar.date+ '일 됐어요.');
+    },
+  }
+
+  const calendar = {
+    date: 1,
+    dateUp : function(){
+      this.date++;
+    }
+  }
+
+  me.studyDate(calendar);
+</script>
+</body>
+</html>
